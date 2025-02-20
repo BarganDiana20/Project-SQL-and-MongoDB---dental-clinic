@@ -29,3 +29,5 @@ Finally, we have the "Invoices" table, which manages the invoices issued to pati
 Each document in the **tratamente** collection represents a dental treatment offered within a specialization, including a detailed description of the treatment and its cost.
 
 The **facturi_plati** collection combines information about invoices and "payments" (as a vector) into a single document for each transaction, with references to the patient and the services billed.
+
+![Alt text](SQL_dental_clinic/schema_clinicaStomatologica.png)
