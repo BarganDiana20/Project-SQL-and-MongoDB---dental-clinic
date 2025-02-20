@@ -20,6 +20,8 @@ We also have the "Medical History" table, which provides details of each patient
 
 Finally, we have the "Invoices" table, which manages the invoices issued to patients following treatments, and the "Payments" table, which records the payments made by patients, ensuring that all financial aspects are managed correctly and transparently.
 
+![Alt text](SQL_dental_clinic/schema_clinicaStomatologica.png)
+
 **Database migration to MongoDB**
 
 **pacienti_istoricMed_consultatii** collection contains 3 distinct relational tables. Each document in this collection holds personal details about a patient registered in our clinic, along with two key fields: a document vector called "medical history," which stores information about each patient's medical history, and another document vector called "consultations," which records each patient's consultation appointments, including the diagnosis provided by the doctor.
@@ -30,4 +32,5 @@ Each document in the **tratamente** collection represents a dental treatment off
 
 The **facturi_plati** collection combines information about invoices and "payments" (as a vector) into a single document for each transaction, with references to the patient and the services billed.
 
-![Alt text](SQL_dental_clinic/schema_clinicaStomatologica.png)
+![Alt text](MongoDB_dental_clinic/colectii_clinStomatologica.jpg)
+
